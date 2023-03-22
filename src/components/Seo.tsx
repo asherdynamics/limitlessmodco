@@ -3,12 +3,12 @@ import { useRouter } from 'next/router';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
+  title: 'Limitess Mod Co.',
+  siteName: 'Limitless Mod Co.',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+    'Discover a world of limitless possibilities with Limitless Mod Co. Our premium vaping products are designed to deliver a truly unparalleled experience. From Innovative designs to top-quality materials, our mods, tanks, and accessories are built to last.',
+
+  url: 'https://limitlessmodco.com',
   type: 'website',
   robots: 'follow, index',
   /**
@@ -58,8 +58,6 @@ export default function Seo(props: SeoProps) {
       <meta name='image' property='og:image' content={meta.image} />
       {/* Twitter */}
       <meta name='twitter:card' content='summary_large_image' />
-      {/* // !STARTERCONF Remove or change to your handle */}
-      {/* <meta name='twitter:site' content='@th_clarence' /> */}
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
       <meta name='twitter:image' content={meta.image} />
@@ -70,12 +68,6 @@ export default function Seo(props: SeoProps) {
             name='publish_date'
             property='og:publish_date'
             content={meta.date}
-          />
-          {/* // !STARTERCONF Remove or change to your name */}
-          <meta
-            name='author'
-            property='article:author'
-            content='Theodorus Clarence'
           />
         </>
       )}
@@ -91,8 +83,6 @@ export default function Seo(props: SeoProps) {
   );
 }
 
-// !STARTERCONF this is the default favicon, you can generate your own from https://realfavicongenerator.net/
-// ! then replace the whole /public/favicon folder and favicon.ico
 const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
   {
     rel: 'apple-touch-icon',
